@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { StyledDiv, Title, TitleContainer, Line, ImageCardButton } from './Home/homeStyles';
-import { ImageCard } from './Home/ImageCard';
+import { StyledDiv, Title, TitleContainer, Line, ImageCardButton } from '../components/Home/homeStyles';
+import { ImageCard } from '../components/Home/ImageCard';
 import Head from 'next/head';
 import NavBar from '../NavBar';
 import { postVote } from '../api/vote';

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyledDiv } from './Leaderboard/leaderboardStyles';
+import { StyledDiv } from '../components/Leaderboard/leaderboardStyles';
 import NavBar from '../NavBar';
 import styled from "styled-components";
 

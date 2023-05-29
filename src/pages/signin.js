@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { supabase, signUp, signIn, signOut } from '../auth';
-import { StyledSignIn } from './Signin/signinStyles';
+import { StyledSignIn } from '../components/Signin/signinStyles';
 import NavBar from '../NavBar'
 import Link from 'next/link';
 

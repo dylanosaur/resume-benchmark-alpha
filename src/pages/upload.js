@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Navbar from '../NavBar'
-import {Line, StyledButton, StyledSelect, StyledDiv, StyledForm, StyledInput, StyledLabel} from './Upload/uploadStyles'
+import {Line, StyledButton, StyledSelect, StyledDiv, StyledForm, StyledInput, StyledLabel} from '../components/Upload/uploadStyles'
 const API_URL = process.env.API_URL; // replace with your API URL
 
 const Upload = () => {
