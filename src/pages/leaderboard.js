@@ -26,11 +26,6 @@ const Leaderboard = () => {
     fetchLeaderboard();
   }, []);
 
-  const handleRowClick = (filename) => {
-    // open modal with image
-    console.log(`Clicked row for ${filename}`);
-  };
-
   return (
     <div>
         <NavBar />
@@ -40,15 +35,15 @@ const Leaderboard = () => {
         <thead>
           <tr>
             <th>Rank</th>
-            <th>Filename</th>
+            <th>URL</th>
             <th>Ranking</th>
           </tr>
         </thead>
         <tbody>
           {docs.map((doc, index) => (
-            <tr key={doc.filename} onClick={() => handleRowClick(doc.filename)}>
+            <tr key={doc.url} >
               <td>{index + 1}</td>
-              <td>{doc.filename}</td>
+              <td><a href={doc.url} >link</a></td>
               <StyledRanking>{doc.ranking}</StyledRanking>
             </tr>
           ))}
